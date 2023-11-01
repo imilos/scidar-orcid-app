@@ -1,20 +1,16 @@
-### TechGeekNext > https://www.techgeeknext.com/
+# SCIDAR-ORCID-APP
 
-# Spring Boot Swagger 3 Example | TechGeekNxt >> 
+Jednostavni API koji služi kao dodatak DSpace 7.x. API obezbeđuje:
 
-> [Spring Boot Swagger 3 Example](https://www.techgeeknext.com/spring-boot/spring-boot-swagger3-example/)
+* vezu sa CSV fajlom sa istraživačima i identifikatorima, sa automatskim osvežavanjem,
+* vezu sa SOLR indeksom,
+* pretragu istraživača po ORCID-u,
+* pretragu istraživača po DSpace authority-ju,
+* slanje mejla adminu sa detaljima primedbe.
 
-## Run Spring Boot application
 ```
-mvn spring-boot:run
+mvn package
+java -jar target/scidar-orcid-app.jar
 ```
-## Test Spring Boot Swagger 3 Example
-<ol>
-<li>Open http://localhost:8080/swagger-ui.html in browser to view the Swagger UI documentation. </li>
-<li>We can see all rest points and can execute to get the response.</li>
-</ol>
 
-### Previous tutorial
-> [Spring Boot Swagger 2 Example](https://www.techgeeknext.com/spring-boot/spring-boot-swagger2-example/)
-
-> [Spring Boot Swagger 3 Security Example](https://www.techgeeknext.com/spring-boot/spring-boot-swagger3-security-example/)
+UI se nalazi na http://localhost:8081/swagger-ui/index.html.
