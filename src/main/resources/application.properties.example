@@ -1,0 +1,18 @@
+#
+# Za pretragu autora
+#
+FRONTEND_URL = https://dspace.unic.kg.ac.rs/
+CSV_URL = https://researchers.scidar.kg.ac.rs/izvoz.php
+SOLR_URL = 
+
+# SMTP konfiguracija
+SMTP_SERVER = smtp2.kg.ac.rs
+SMTP_PORT = 587
+SMTP_USER = 
+SMTP_PASSWORD =
+MAIL_TO = 
+
+# Minutes to refresh CSV
+REFRESH_CSV_MINS = 15
+
+server.port = 8081
