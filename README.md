@@ -8,6 +8,8 @@ Jednostavni API koji služi kao dodatak DSpace 7.x. API obezbeđuje:
 * pretragu istraživača po DSpace authority-ju,
 * slanje mejla adminu sa detaljima primedbe.
 
+Konfiguracija treba da se nalazi u fajlu `src/main/resources/application.properties`. Dat je primer `application.properties.example`.
+
 ```
 mvn package
 java -jar target/scidar-orcid-app.jar
