@@ -1,7 +1,7 @@
 package rs.kg.scidar.app;
 
-public class Person
-{
+public class Person {
+
     private String orcidID;
     private String organisationID;
     private String name;
@@ -12,7 +12,7 @@ public class Person
     private String scopusID;
     private String ecrisID;
 
-    public Person(String orcidID,  String ecrisID, String scopusID, String organisationID, String name, String email, String organisationPart,  String organisationName, String searchIndex) {
+    public Person(String orcidID, String ecrisID, String scopusID, String organisationID, String name, String email, String organisationPart, String organisationName, String searchIndex) {
         this.orcidID = orcidID.trim();
         this.organisationID = organisationID.trim();
         this.name = name.trim();
@@ -24,97 +24,92 @@ public class Person
         this.ecrisID = ecrisID.trim();
     }
 
-    public void setOrcidID(String orcidID)
-    {
+    public void setOrcidID(String orcidID) {
         this.orcidID = orcidID;
     }
-    public void setScopusID(String scopusID)
-    {
+
+    public void setScopusID(String scopusID) {
         this.scopusID = scopusID;
     }
 
-    public void setEcrisID(String ecrisID)
-    {
+    public void setEcrisID(String ecrisID) {
         this.ecrisID = ecrisID;
     }
 
-    public void setOrganisationID(String organisationID)
-    {
+    public void setOrganisationID(String organisationID) {
         this.organisationID = organisationID;
     }
 
-    public void setName(String name)
-    {
+    public void setName(String name) {
         this.name = name;
     }
 
-    public void setOrganisationName(String organisationName)
-    {
+    public void setOrganisationName(String organisationName) {
         this.organisationName = organisationName;
     }
 
-    public void setSearchIndex(String searchIndex)
-    {
+    public void setSearchIndex(String searchIndex) {
         this.searchIndex = searchIndex;
     }
 
-    public String getOrcidID()
-    {
+    public String getOrcidID() {
         return orcidID;
     }
-    public String getScopusID()
-    {
+
+    public String getScopusID() {
         return scopusID;
     }
-    
-    public String getEcrisID()
-    {
+
+    public String getEcrisID() {
         return ecrisID;
     }
-    
 
-    public String getOrganisationID()
-    {
-        if (organisationID.equalsIgnoreCase("0"))
-        {
+    public String getOrganisationID() {
+        if (organisationID.equalsIgnoreCase("0")) {
             return "";
         }
         return organisationID;
     }
 
-    public String getEmail()
-    {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email)
-    {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public String getOrganisationPart()
-    {
+    public String getOrganisationPart() {
         return organisationPart;
     }
 
-    public void setOrganisationPart(String organisationPart)
-    {
+    public void setOrganisationPart(String organisationPart) {
         this.organisationPart = organisationPart;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public String getOrganisationName()
-    {
+    public String getOrganisationName() {
         return organisationName;
     }
 
-    public String getSearchIndex()
-    {
+    public String getSearchIndex() {
         return searchIndex;
     }
-    
+
+    @Override
+    public String toString() {
+        return "ORCID: " + orcidID
+                + " Organisation: " + organisationID
+                + " Name: " + name
+                + " Email: " + email
+                + " OrganisationPart: " + organisationPart
+                + " OrganisationName: " + organisationName
+                + " searchIndex: " + searchIndex
+                + " ScopusID: " + scopusID
+                + " ECrisID: " + ecrisID;
+    }
+
 }

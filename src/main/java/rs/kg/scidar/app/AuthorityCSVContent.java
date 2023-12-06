@@ -127,6 +127,7 @@ public class AuthorityCSVContent {
                 }
 
                 //String orcidID,  String ecrisID, String scopusID, String organisationID, String name, String email, String organisationPart,  String organisationName
+                //System.out.println(persons.get(data[1].trim()));
             }
             csvReader.close();
         } catch (MalformedURLException ex) {
